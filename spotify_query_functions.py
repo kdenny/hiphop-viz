@@ -57,7 +57,8 @@ def get_infile_artists():
     rappers_infile = []
 
 
-    f = open("rappers_4.csv", 'rb')
+    # f = open("rappers_3.csv", 'rb')
+    f = open("rappers.csv", 'rb')
     try:
         reader = csv.reader(f)
         for row in reader:

@@ -1,107 +1,107 @@
-name,size,city
-Mannie Fresh,3,New Orleans
-Nicki Minaj,10,null
-Rick Ross,16,Miami
-The Weeknd,3,Toronto
-Method Man,9,New York
-Juicy J,9,Memphis
-De La Soul,1,New York
-Jeezy,12,Atlanta
-Eminem,6,Detroit
-source,0,null
-Kurupt,7,Los Angeles
-Eazy-E,1,Los Angeles
-Slick Rick,2,New York
-OutKast,2,Atlanta
-Vince Staples,1,Los Angeles
-Cam'Ron,8,New York
-Young Thug,5,Atlanta
-The Roots,4,Philadelphia
-Inspectah Deck,3,New York
-Kool G Rap,3,New York
-Waka Flocka Flame,11,Atlanta
-Talib Kweli,6,New York
-EPMD,1,Bay Area
-The Game,17,Los Angeles
-B-Real,3,Los Angeles
-Q-Tip,4,New York
-Lil Wayne,20,New Orleans
-Busta Rhymes,17,New York
-50 Cent,8,New York
-2 Chainz,15,Atlanta
-MF Doom,1,null
-Mos Def,4,New York
-DMX,5,null
-Tyga,11,Los Angeles
-Nelly,11,null
-Rakim,1,New York
-Missy Elliott,5,null
-Phonte,1,null
-O.T. Genasis,2,null
-Brand Nubian,0,null
-T.I.,15,Atlanta
-DJ Mustard,4,null
-Lupe Fiasco,3,Chicago
-Freeway,8,Philadelphia
-Juvenile,5,New Orleans
-Earl Sweatshirt,1,Los Angeles
-Wiz Khalifa,13,Pittsburgh
-Raekwon,11,New York
-GZA,2,New York
-French Montana,14,New York
-Diddy,12,New York
-Scarface,10,Houston
-A Tribe Called Quest,1,New York
-Common,8,Chicago
-Ace Hood,9,null
-Redman,7,New York
-Young Dolph,4,null
-Jim Jones,11,New York
-LL Cool J,4,null
-Kendrick Lamar,9,Los Angeles
-Gang Starr,2,New York
-Wu-Tang Clan,4,New York
-2Pac,6,Los Angeles
-Lil Jon,9,Atlanta
-Cypress Hill,1,Los Angeles
-Bun B,13,Houston
-Cappadonna,4,New York
-Eve,2,null
-Pharrell Williams,8,null
-Ice-T,2,null
-Clipse,2,null
-Ghostface Killah,7,New York
-Snoop Dogg,17,Los Angeles
-Wale,12,null
-Kanye West,12,Chicago
-Curren$y,5,New Orleans
-target,0,null
-Ludacris,11,Atlanta
-Yo Gotti,13,Los Angeles
-Ice Cube,5,Los Angeles
-The Pharcyde,0,Los Angeles
-E-40,11,Bay Area
-YG,7,Los Angeles
-Mobb Deep,5,New York
-Nas,12,New York
-Drake,8,Toronto
-Gucci Mane,13,Atlanta
-Rich Homie Quan,5,Atlanta
-Mac Miller,2,Pittsburgh
-Ty Dolla $ign,10,Los Angeles
-RZA,5,New York
-DJ Khaled,12,Miami
-Pete Rock,3,Philadelphia
-Jay Rock,4,Los Angeles
-Birdman,10,New Orleans
-Future,13,Atlanta
-Fat Joe,12,New York
-Meek Mill,10,Philadelphia
-Logic,1,null
-Little Brother,0,null
-Geto Boys,0,Houston
-A$AP Rocky,5,New York
-Big L,1,New York
-Big Sean,10,Detroit
-Chance The Rapper,2,Chicago
-T-Pain,10,null
+name,size,city,featcount
+Mannie Fresh,3,New Orleans,9
+Nicki Minaj,10,International,32
+Rick Ross,16,Miami,50
+The Weeknd,3,Toronto,11
+Method Man,9,,28
+Juicy J,9,Memphis,29
+De La Soul,1,New York,4
+Jeezy,12,Atlanta,37
+Eminem,6,Detroit,19
+source,0,null,1
+Kurupt,7,Los Angeles,23
+Eazy-E,1,Los Angeles,4
+Slick Rick,2,,8
+OutKast,2,Atlanta,8
+Vince Staples,1,Los Angeles,5
+Cam'Ron,8,New York,25
+Young Thug,5,Atlanta,15
+The Roots,4,Philadelphia,12
+Inspectah Deck,3,New York,10
+Kool G Rap,3,New York,11
+Waka Flocka Flame,11,Atlanta,33
+Talib Kweli,6,New York,18
+EPMD,1,,5
+The Game,17,Los Angeles,52
+B-Real,3,,11
+Q-Tip,4,New York,12
+Lil Wayne,20,New Orleans,61
+Busta Rhymes,17,,52
+50 Cent,8,New York,25
+2 Chainz,15,Atlanta,46
+MF Doom,1,,5
+Mos Def,4,New York,14
+DMX,5,,15
+Tyga,11,,35
+Nelly,11,St Louis,34
+Rakim,1,New York,5
+Missy Elliott,5,,15
+Phonte,1,,4
+O.T. Genasis,2,,6
+Brand Nubian,0,,2
+T.I.,15,Atlanta,47
+DJ Mustard,4,,13
+Lupe Fiasco,3,Chicago,10
+Freeway,8,Philadelphia,25
+Juvenile,5,New Orleans,17
+Earl Sweatshirt,1,Los Angeles,3
+Wiz Khalifa,13,Pittsburgh,41
+Raekwon,11,New York,34
+GZA,2,New York,8
+French Montana,14,New York,43
+Diddy,12,New York,37
+Scarface,10,Houston,30
+A Tribe Called Quest,1,New York,5
+Common,8,Chicago,24
+Ace Hood,9,,29
+Redman,7,New York,21
+Young Dolph,4,,13
+Jim Jones,11,New York,34
+LL Cool J,4,,14
+Kendrick Lamar,9,Los Angeles,28
+Gang Starr,2,,8
+Wu-Tang Clan,4,New York,13
+2Pac,6,Los Angeles,20
+Lil Jon,9,Atlanta,29
+Cypress Hill,1,,5
+Bun B,13,Houston,40
+Cappadonna,4,New York,12
+Eve,2,,6
+Pharrell Williams,8,Virginia Beach,25
+Ice-T,2,,6
+Clipse,2,Virginia Beach,8
+Ghostface Killah,7,New York,21
+Snoop Dogg,17,Los Angeles,53
+Wale,12,Washington,36
+Kanye West,12,Chicago,38
+Curren$y,5,New Orleans,17
+target,0,null,1
+Ludacris,11,Atlanta,35
+Yo Gotti,13,,40
+Ice Cube,5,Los Angeles,17
+The Pharcyde,0,Los Angeles,1
+E-40,11,Bay Area,35
+YG,7,Los Angeles,23
+Mobb Deep,5,New York,15
+Nas,12,New York,38
+Drake,8,Toronto,25
+Gucci Mane,13,Atlanta,40
+Rich Homie Quan,5,Atlanta,16
+Mac Miller,2,Pittsburgh,7
+Ty Dolla $ign,10, Los Angeles,31
+RZA,5,New York,15
+DJ Khaled,12,Miami,38
+Pete Rock,3,,11
+Jay Rock,4,Los Angeles,14
+Birdman,10,New Orleans,31
+Future,13,Atlanta,40
+Fat Joe,12,New York,37
+Meek Mill,10,Philadelphia,32
+Logic,1,Washington,4
+Little Brother,0,,2
+Geto Boys,0,Houston,1
+A$AP Rocky,5,New York,17
+Big L,1,New York,5
+Big Sean,10,Detroit,31
+Chance The Rapper,2,Chicago,6
+T-Pain,10,Tallahassee,32
