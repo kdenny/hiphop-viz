@@ -6,12 +6,20 @@ import spotipy
 
 from spotify_query_functions import spQuery, get_infile_artists
 
+from unidecode import unidecode
+def remove_non_ascii(text):
+    for i in range(0, len(text)):
+        try:
+            text[i].encode("ascii")
+        except:
+            # means it's non-ASCII
+            text = text.replace(text[i], " ")  # replacing it with a single space
+    return text
 
 def getArtist(artist):
 
     artistInfo = {}
     result = spQuery(artist)['artists']['items'][0]
-    pprint(result)
     artistInfo['name'] = result['name']
     artistInfo['popularity'] = result['popularity']
     artistInfo['id'] = result['id']
@@ -40,13 +48,49 @@ def processFirstDegFeatures(artist_data):
 
     for arecord in artist_data:
 
-        artist_name = arecord['name']
+        artist_name = remove_non_ascii(arecord['name'])
         uri_string = 'spotify:artist:{0}'.format(arecord['id'])
         spotify = spotipy.Spotify()
 
         artist_albums = spotify.artist_albums(uri_string, album_type='album')['items']
 
-        pprint(artist_albums)
+        # pprint(artist_albums)
+
+        for alb in artist_albums:
+            if 'US' in alb["available_markets"]:
+                alb_item = {}
+
+                alb_item['uri'] = alb['uri']
+                alb_item['name'] = remove_non_ascii(alb['name'])
+                album_tracks = spotify.album_tracks(alb_item['uri'])['items']
+
+                alb_item['tracks'] = []
+
+                for track in album_tracks:
+                    track_item = {}
+                    if 'edit' not in remove_non_ascii(track['name']).lower():
+                        track_item['name'] = remove_non_ascii(track['name'])
+                        track_item['artist'] = artist_name
+                        track_item['id'] = track['id']
+                        if 'popularity' in track:
+                            track_item['popularity'] = track['popularity']
+                        track_item['features'] = []
+
+                        for feat_artist in track['artists']:
+                            feat_item = {}
+                            if remove_non_ascii((feat_artist['name'])) != artist_name:
+                                feat_item['name'] = remove_non_ascii(feat_artist['name'])
+                                feat_item['id'] = feat_artist['id']
+                                track_item['features'].append(feat_item)
+
+                        if len(track_item['features']) > 0:
+                            alb_item['tracks'].append(track_item)
+
+                arecord['albums'].append(alb_item)
+
+        new_artist_data.append(arecord)
+    pprint(new_artist_data)
+    return new_artist_data
 
 
         ### Properly save all albums to the artist
