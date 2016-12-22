@@ -93,6 +93,8 @@ def processFirstDegFeatures(artist_data):
     return new_artist_data
 
 
+
+
         ### Properly save all albums to the artist
 
 
@@ -128,6 +130,18 @@ original_artist_list = get_infile_artists()
 artist_data = processArtists(original_artist_list)
 
 new_artist_data = processFirstDegFeatures(artist_data)
+
+pprint(new_artist_data)
+
+allFeatured = []
+
+
+###
+for artist in new_artist_data:
+    artist_albums = artist['albums']
+    for alb in artist_albums:
+        for song in alb['tracks']:
+
 
 
 
